@@ -61,10 +61,25 @@ body {
             &::before {
                 content: "Página atual";
                 position: absolute;
-                top: 50px;
+                top: 60px;
                 left: 50%;
                 transform: translateX(-50%);
                 color: #cccccc;
+                background-color: #ce9009;
+                padding: 10px;
+                border-radius: 5px;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 50px;
+                left: 25%;
+                transform: rotate(45deg);
+                border-top: 10px solid #ce9009;
+                border-left: 10px solid #ce9009;
+                border-right: 10px solid transparent;
+                border-bottom: 10px solid transparent;
             }
         }
     }
