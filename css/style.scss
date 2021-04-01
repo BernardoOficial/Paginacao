@@ -52,5 +52,20 @@ body {
             transition: 0.2s linear;
             box-shadow: inset 0 0 2px 4px #cccccc;
         }
+
+        &[data-pagina-atual] {
+            position: relative;
+            color: #121212;
+            background-color: #ce9009;
+
+            &::before {
+                content: "Página atual";
+                position: absolute;
+                top: 50px;
+                left: 50%;
+                transform: translateX(-50%);
+                color: #cccccc;
+            }
+        }
     }
 }
